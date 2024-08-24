@@ -13,7 +13,7 @@
 	--background-gray:#E6E6E6;
 }
 button{
-	padding: 7px 25px;
+	padding: 11px 25px;
 	font-size: 17px;
 	font-weight: bold;
 	font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -167,6 +167,8 @@ header{
 	background: var(--background-gray);
 	width: fit-content;
 	box-shadow: 30px 30px 40px rgba(55, 55, 55, 0.359);
+	position: relative;
+	bottom: 80px;
 }
 .section_3 > section > div {
 	display: flex;
@@ -193,4 +195,153 @@ header{
 	flex-direction: row;
 	justify-content: end;
 	padding-right: 50px;
+}
+/* --------- Section #4 --------- */
+.section_4{
+	display: flex;
+	flex-direction: column;
+	background-color: black;
+	align-items: center;
+	padding: 80px 0;
+	color: white;
+	text-align: center;
+	gap: 30px;
+}
+.section_4 > div > h3{
+	font-size: 50px;
+	font-weight: lighter;
+	color: var(--primary-yellow);
+	width: fit-content;
+}
+.section_4 > div > p{
+	max-width: 700px;
+	min-width: 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+/* --------- Section #5 --------- */
+.section_5{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.section_5 >section{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	align-items: center;
+	width: fit-content;
+	padding: 80px 0 80px 85px;
+	gap: 50px;
+}
+.section_5 > section> section:nth-child(2){
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	padding: 0 0 0 40px;
+}
+.section_5 > section > section > img{
+	width: 650px;
+} 
+.section_5 > section> section > div > h2{
+	font-size: 60px;
+	font-weight: lighter;
+	width: fit-content;
+	line-height: 40px;
+}
+.section_5 > section > section > div > p{
+	max-width:350px ;
+	min-width: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	color: gray;
+}
+/* --------- Section #6 --------- */
+.section_6{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background-gray);
+}
+.section_6 > section{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	align-items: center;
+	padding: 100px 0 ;
+}
+.section_6 > section > section:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	place-self: center;
+}
+.section_6 > section > section:nth-child(1) > div > h2{
+	font-size: 80px;
+	font-weight: 500;
+	width:430px;
+}
+.section_6 > section > section:nth-child(1) > div > p{
+	max-width: 440px;
+	min-width: 200px;
+	display: flex;
+	flex-wrap: wrap;
+}
+/* --------- Section #7 --------- */
+.section_7{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	padding: 100px;/*---------♦----------♦-------MOMENTANEO-------♦-------♦-----*/
+}
+.section_7 > section:nth-child(1) > div{
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	color: white;
+	gap: 10px;
+}
+.section_7 > section:nth-child(1) input{
+	background-color:transparent;
+	border: solid white;
+	color: white;
+	padding: 5px 0;
+	outline: none;
+}
+.section_7 > section:nth-child(1) input::placeholder{
+	color: transparent;
+}
+.section_7 > section:nth-child(1) > div:nth-child(1){
+	display: flex;
+	flex-direction: row;
+	place-content: center;
+	gap: 25px;
+	padding: 10px 0;
+}
+.section_7 > section:nth-child(1) > div:nth-child(1) > div > input{
+	width: 200px;
+}
+.section_7 > section:nth-child(1) > div:nth-child(2) > div > input{
+	width: 425px;
+}
+.section_7 > section:nth-child(1) > div:nth-child(2) > div > textarea{
+	resize: none;
+	width:425px;
+	height: 150px;
+	background-color: transparent;
+	border: solid white;
+	color: white;
+	outline:none;
+}
+.section_7 > section:nth-child(1) > div:nth-child(2) > div > textarea::placeholder{
+	color: transparent;
+}
+textarea::-webkit-scrollbar{
+	background-color: transparent;
+}
+textarea::-webkit-scrollbar-thumb{
+	background-color: gray;
+	border-radius: 10px;
+
+}
+textarea::-webkit-scrollbar-thumb:hover{
+	background-color: white;
 }
