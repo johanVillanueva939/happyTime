@@ -603,9 +603,7 @@ footer > section > section:nth-child(2) > div:nth-child(2){
 		font-size: 70px;
 		width: 400px;
 	}
-	.section_6 > section > section:nth-child(1) > div > p{
-		width: 400px;
-	}
+
 }
 @media screen and (max-width:890px) {
 	iframe{
@@ -760,6 +758,12 @@ footer > section > section:nth-child(2) > div:nth-child(2){
 	}
 }
 @media screen and (max-width:505px) {
+	header{
+		justify-content: center;
+	}
+	header > section:nth-child(2){
+		display: none;
+	}
 	.section_1-5 > section{
 		padding: 60px 0;
 	}
@@ -774,6 +778,18 @@ footer > section > section:nth-child(2) > div:nth-child(2){
 	}
 	iframe{
 		width: 400px;
+	}
+}
+@media screen and (max-width:450px) {
+	.section_1-5 > section > section > div > img{
+		width: 150px;
+	}
+	.section_2 {
+		justify-content: center;
+	}
+	.section_2 img{
+		left: 35%;
+		width: 350px;
 	}
 }
 /* .section_1, .section_1-5 > section,.section_1-5 > section > section, .section_2, .section_3 > section, .section_5 > section, .section_6 > section, .section_7{
