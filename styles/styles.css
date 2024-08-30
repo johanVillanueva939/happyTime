@@ -172,6 +172,9 @@ header{
 }
 .section_2 > section > div > p{
 	max-width: 350px;
+	min-width: 10px;
+	display: flex;
+	flex-wrap: wrap;
 }
 .section_2 > section > button{
 	background-color: black;
@@ -318,7 +321,7 @@ header{
 }
 .section_6 > section > section:nth-child(1) > div > p{
 	max-width: 440px;
-	min-width: 200px;
+	min-width: 100px;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -391,7 +394,10 @@ textarea::-webkit-scrollbar-thumb:hover{
 	background-color: white;
 }
 .section_7 > section:nth-child(1) > div:nth-child(2) > p{
-	width: 425px;
+	max-width: 425px;
+	min-width: none;
+	display: flex;
+	flex-wrap: wrap;
 	font-size: 12px;
 	color:whitesmoke;
 	padding-bottom: 60px;
@@ -429,6 +435,9 @@ textarea::-webkit-scrollbar-thumb:hover{
 }
 .section_8 p{
 	font-size: 20px;
+	max-width: 376px;
+	min-width: none;
+	text-align: center;
 }
 iframe{
 	width: 1100px;
@@ -473,6 +482,7 @@ footer > section > section:nth-child(2){
 	padding: 80px 0 0 0 ;
 	font-weight: 400;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 footer > section > section:nth-child(2) > div:nth-child(2){
 	font-size: 25px;
@@ -643,6 +653,9 @@ footer > section > section:nth-child(2) > div:nth-child(2){
 	}
 }
 @media screen and (max-width:815px) {
+	p{
+		padding: 0 5px;
+	}
 	.section_1 > section > div h1{
 		font-size: 60px;
 		width: 250px;
@@ -670,11 +683,20 @@ footer > section > section:nth-child(2) > div:nth-child(2){
 	.section_3 > section > div{
 		align-items: center;
 	}
+	.section_3 > section > div:nth-child(2){
+		padding: 0;
+	}
+	.section_3 > section > div:nth-child(2) p{
+		padding: 0;
+	}
 	.section_3 > section > div:nth-child(2) > div:nth-child(4){
 		padding: 0 0 40px 0 ;
 	}
 	.section_4 img{
 		width: 600px;
+	}
+	.section_5 > section > section:nth-child(2){
+		padding: 0;
 	}
 	iframe{
 		width: 600px;
@@ -744,6 +766,7 @@ footer > section > section:nth-child(2) > div:nth-child(2){
 	iframe{
 		width: 500px;
 	}
+	
 }
 @media screen and (max-width:555px) {
 	.section_2 img{
@@ -770,6 +793,10 @@ footer > section > section:nth-child(2) > div:nth-child(2){
 	.section_5 > section >section img{
 		width: 100%;
 	}
+	.section_6 > section > section:nth-child(1) > div h2{
+		font-size: 60px;
+		width: 350px;
+	}
 	.section_7 > section:nth-child(1) > div:nth-child(1) > div > input{
 		width: 155px;
 	}
@@ -790,6 +817,37 @@ footer > section > section:nth-child(2) > div:nth-child(2){
 	.section_2 img{
 		left: 35%;
 		width: 350px;
+	}
+}
+@media screen and (max-width:410px) {
+	iframe{
+		width: 350px;
+	}
+	.section_7 > section:nth-child(1){
+		padding: 20px 0;
+		width: auto;
+	}
+	.section_7 > section:nth-child(1) > div:nth-child(1){
+		padding: 60px 0 0 0;
+	}
+}
+@media screen and (max-width:360px) {
+	.section_2 > section:nth-child(1) p{
+		width: 340px;
+		padding: 0 0 0 0;
+	}
+	.section_6 > section img{
+		width: 340px;
+	}
+	.section_7 > section:nth-child(1) > div:nth-child(1){
+		flex-direction: column;
+		gap: 10px;
+	}
+	.section_7 > section:nth-child(1) > div:nth-child(1) > div > input, .section_7 > section:nth-child(1) > div:nth-child(2) > div > input, .section_7 > section:nth-child(1) > div:nth-child(2) > div > textarea{
+		width: 300px;
+	}
+	iframe{
+		width: 300px;
 	}
 }
 /* .section_1, .section_1-5 > section,.section_1-5 > section > section, .section_2, .section_3 > section, .section_5 > section, .section_6 > section, .section_7{
